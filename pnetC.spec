@@ -29,7 +29,7 @@ Portable.NET kompilatora cscc.
 Summary:	Headers for pnet C library
 Summary(pl):	Pliki nag³ówkowe dla biblioteki pnet C
 Group:		Development/Libraries
-Requires:	%{name}
+Requires:	%{name} = %{version}
 Requires:	pnet-compiler-c
 
 %description devel
@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
-rm -rf ${RPM_BUILD_ROOT}
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
