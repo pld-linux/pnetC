@@ -13,6 +13,7 @@ Source0:	http://www.southern-storm.com.au/download/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	pnet-compiler-c = %{version}
+BuildRequires:	pnet-compiler-csharp = %{version}
 BuildRequires:	pnetlib-base = %{pnetlib_version}
 Requires:	pnetlib-base = %{pnetlib_version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
