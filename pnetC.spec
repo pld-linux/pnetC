@@ -4,7 +4,7 @@ Summary:	The ANSI compatible C library for IL
 Summary(pl):	Zgodna z ANSI biblioteka C dla IL
 Name:		pnetC
 Version:	0.6.6
-Release:	0.1
+Release:	0.2
 License:	LGPL
 Vendor:		DotGNU
 Group:		Libraries
@@ -32,8 +32,8 @@ Portable.NET kompilatora cscc.
 Summary:	Headers for pnet C library
 Summary(pl):	Pliki nag³ówkowe dla biblioteki pnet C
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
-Requires:	pnet-compiler-c
+Requires:	%{name} = %{version}-%{release}
+Requires:	pnet-compiler-c = %{version}
 
 %description devel
 These are the header files required to build programs with the C
@@ -58,7 +58,8 @@ nak³adki C na cscc.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	CYG_CACHE=%{_libdir}/cscc/lib
 
 %clean
 rm -rf $RPM_BUILD_ROOT
