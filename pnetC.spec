@@ -10,9 +10,9 @@ Source0:	http://www.southern-storm.com.au/download/%{name}-%{version}.tar.gz
 # Source0-md5:	31a95c990aa6d8b623b6858abf581159
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	pnet-compiler-c
-BuildRequires:	pnetlib-base >= 0.5.10
-Requires:	pnetlib-base >= 0.5.10
+BuildRequires:	pnet-compiler-c = %{version}
+BuildRequires:	pnetlib-base = %{version}
+Requires:	pnetlib-base = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,8 +37,8 @@ These are the header files required to build programs with the C
 backend to cscc.
 
 %description devel -l pl
-Pliki nag³ówkowe potrzebne do budowania programów korzystaj±c z nak³adki
-C na cscc.
+Pliki nag³ówkowe potrzebne do budowania programów korzystaj±c z
+nak³adki C na cscc.
 
 %prep
 %setup -q
