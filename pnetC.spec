@@ -1,15 +1,15 @@
-%define		pnetlib_version 0.7.0
+%define		pnetlib_version 0.7.2
 
 Summary:	The ANSI compatible C library for IL
 Summary(pl):	Zgodna z ANSI biblioteka C dla IL
 Name:		pnetC
-Version:	0.7.0
+Version:	0.7.2
 Release:	1
 License:	LGPL
 Vendor:		DotGNU
 Group:		Libraries
 Source0:	http://www.southern-storm.com.au/download/%{name}-%{version}.tar.gz
-# Source0-md5:	5ae49470be4202c144a8c386be8095b5
+# Source0-md5:	6d2742379f29f7ba1bd040114d0e8010
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	pnet-compiler-c = %{version}
