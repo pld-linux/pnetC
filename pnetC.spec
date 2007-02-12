@@ -1,7 +1,7 @@
 %define		pnetlib_version 0.7.4
 
 Summary:	The ANSI compatible C library for IL
-Summary(pl):	Zgodna z ANSI biblioteka C dla IL
+Summary(pl.UTF-8):   Zgodna z ANSI biblioteka C dla IL
 Name:		pnetC
 Version:	0.7.4
 Release:	1
@@ -23,14 +23,14 @@ The goal of the pnetC project is to create an ANSI-compatible C
 library, that can be compiled down to IL using Portable.NET's "cscc"
 compiler.
 
-%description -l pl
+%description -l pl.UTF-8
 Celem projektu pnetC jest stworzenie zgodnej z ANSI C biblioteki,
-która mo¿e byæ skompilowana do IL korzystaj±c z dostarczanego przez
+ktÃ³ra moÅ¼e byÄ‡ skompilowana do IL korzystajÄ…c z dostarczanego przez
 Portable.NET kompilatora cscc.
 
 %package devel
 Summary:	Headers for pnet C library
-Summary(pl):	Pliki nag³ówkowe dla biblioteki pnet C
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe dla biblioteki pnet C
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	pnet-compiler-c = %{version}
@@ -39,9 +39,9 @@ Requires:	pnet-compiler-c = %{version}
 These are the header files required to build programs with the C
 backend to cscc.
 
-%description devel -l pl
-Pliki nag³ówkowe potrzebne do budowania programów korzystaj±c z
-nak³adki C na cscc.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe potrzebne do budowania programÃ³w korzystajÄ…c z
+nakÅ‚adki C na cscc.
 
 %prep
 %setup -q
