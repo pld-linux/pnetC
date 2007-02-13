@@ -1,7 +1,7 @@
 %define		pnetlib_version 0.7.4
 
 Summary:	The ANSI compatible C library for IL
-Summary(pl.UTF-8):   Zgodna z ANSI biblioteka C dla IL
+Summary(pl.UTF-8):	Zgodna z ANSI biblioteka C dla IL
 Name:		pnetC
 Version:	0.7.4
 Release:	1
@@ -30,7 +30,7 @@ Portable.NET kompilatora cscc.
 
 %package devel
 Summary:	Headers for pnet C library
-Summary(pl.UTF-8):   Pliki nagłówkowe dla biblioteki pnet C
+Summary(pl.UTF-8):	Pliki nagłówkowe dla biblioteki pnet C
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	pnet-compiler-c = %{version}
