@@ -4,7 +4,7 @@ Summary:	The ANSI compatible C library for IL
 Summary(pl.UTF-8):	Zgodna z ANSI biblioteka C dla IL
 Name:		pnetC
 Version:	0.7.4
-Release:	1
+Release:	2
 License:	LGPL
 Vendor:		DotGNU
 Group:		Libraries
